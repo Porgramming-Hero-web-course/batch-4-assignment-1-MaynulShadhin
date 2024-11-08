@@ -1,18 +1,18 @@
 <!-- Why are Type Guards Necessary? Discuss Various Types of Type Guards and Their Use Cases. -->
 
-* Type Guards-->
+# Type Guards-->
 
 In TypeScript, type guard ensure the code handles data safely and accurately by checking the type of a variable in runtime. They help prevent runtime errors, enhance code clarity and improve codes.
 
-** Common type guard in TypeScript
+## Common type guard in TypeScript
 
 There are different kind of type guard we use in typeScript in different situation. I am writing the most useful type guards below--->
 
-1. typeof :
+### 1. `typeof` :
 
-use case for primitive types like number,string,boolean. Example-->
+use case for primitive types like number,string,boolean. **Example-->**
 
-const input (input: string | number) {
+const getInput (input: string | number) {
     if(typeof input === 'string'){
         return input
     }else{
@@ -20,10 +20,10 @@ const input (input: string | number) {
     }
 }
 
-2. instanceof :
+### 2. `instanceof` :
 
 useful with classes to verify object instances
-Example-->
+**Example-->**
 
 class Animal {
     name: string;
@@ -73,10 +73,10 @@ const cat = new Cat("Persian","cat")
 
 getAnimal(dog);
 
-3. in Guard : 
+3. `in Guard` : 
 
 good for checking property existence on Object.
-Example:
+**Example:**
 
 interface Car {
     model: string;
